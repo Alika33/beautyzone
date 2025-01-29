@@ -11,6 +11,7 @@
   flex-basis: calc((100% - 32px) / 3);
   height: auto;
   margin: 0;
+  box-shadow: 20px;
 
   @media screen and (max-width: 1000px) {
     flex-basis: calc((100% - 16px) / 2);
@@ -30,7 +31,7 @@
   );
   background-size: contain;
   height: 456px;
-  border-radius: 4px 120px;
+  border-radius: 40px 120px;
 }
 .procedure-name {
   font-family: "roboto", sans-serif;
@@ -45,7 +46,7 @@
 }
 .procedure-image {
   display: flex;
-  border-radius: 4px 120px;
+  border-radius: 40px 120px;
   z-index: -1;
   position: absolute;
   top: 0;

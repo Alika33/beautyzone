@@ -36,7 +36,10 @@
   font-family: "Roboto" sans-serif;
 }
 .form-input:focus {
-  background-color: var(--color-brand-light);
+  color: var(--color-brand-light);
+}
+input {
+  color: white;
 }
 .modal-input {
   display: flex;
@@ -53,5 +56,5 @@
   color: var(--white);
 }
 .modal-input:focus {
-  background-color: var(--color-brand-light);
+  color: var(--color-brand-light);
 }

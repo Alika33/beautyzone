@@ -36,7 +36,8 @@
   margin: 0 auto 8px auto;
   cursor: pointer;
   max-width: 283px;
-  border: 0;
+  border: 2px solid var(--color-brand);
+  transition: 0.3s;
 
   @media screen and (max-width: $bp-tablet) {
     max-width: 242px;
