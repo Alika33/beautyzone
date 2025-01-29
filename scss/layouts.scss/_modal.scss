@@ -21,6 +21,13 @@
   border-radius: 48px;
   margin: 0 auto;
   position: relative;
+  overflow-y: scroll;
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 80vh;
+    height: 80vh;
+    object-fit: contain;
+  }
 }
 .backdrop.open {
   visibility: visible;
@@ -46,8 +53,14 @@
   font-weight: 700px;
   text-align: center;
   color: var(--white);
-  margin: 0 auto 40px auto;
+  margin: 0 auto;
+  padding: 0 10px 40px 10px;
   max-width: 435px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 44px;
+    padding-bottom: 20px;
+  }
 }
 .modal-offer {
   font-family: "roboto", sans-serif;
@@ -56,7 +69,8 @@
   font-weight: 600px;
   max-width: 274px;
   text-align: center;
-  margin: 0 auto 32px auto;
+  margin: 0 auto;
+  padding: 0 8px 32px 8px;
 }
 .modal-offer span {
   color: var(--color-brand);

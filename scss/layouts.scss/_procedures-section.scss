@@ -4,7 +4,6 @@
   &__container {
     position: relative;
     display: flex;
-    gap: 32px;
     align-items: center;
     padding-bottom: 32px;
     z-index: 0;
@@ -43,7 +42,8 @@
   }
 }
 .arrow {
-  fill: var(--color-brand-dark);
+  fill: white;
+  stroke: 0;
 }
 
 .arrow-button-prev,
@@ -52,16 +52,22 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   padding: 0;
   border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid var(--color-brand-dark);
+  background-color: black;
+  opacity: 0.8;
+  border: 0;
   transition-duration: 0.25s;
+  z-index: 2;
+}
+.arrow-button-prev {
+  margin-right: -20px;
 }
 .arrow-button-next {
   rotate: 180deg;
+  margin-left: -20px;
 }
 .arrow-button-next:hover .arrow,
 .arrow-button-prev:hover .arrow {
@@ -70,5 +76,6 @@
 .arrow-button-next:hover,
 .arrow-button-prev:hover {
   background-color: var(--color-brand);
-  border: 1px solid var(--white);
+  border: 0;
+  opacity: 1;
 }
