@@ -743,6 +743,12 @@ body {
   font-weight: 700;
   margin-bottom: 48px;
 }
+@media screen and (max-width: 768px) {
+  .procedures-section__title {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+  }
+}
 .procedures-section__title span {
   color: var(--color-brand);
   font-family: "Play", sans-serif;
